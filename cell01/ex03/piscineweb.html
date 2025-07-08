@@ -2,21 +2,27 @@
     <head>
         <style>
             img {width: 100%}
+			            .img-row {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+            .img-col {
+                width: 600px;
+            }
         </style>
     </head>
     <body>
         <center>
             <h1>Piscine Web</h1>
-            <table>
-                <tr>
-                    <th width="600">
-                        <a href="https://www.youtube.com/watch?v=INscMGmhmX4"><img src="https://venus-online-software-training.com/wp-content/uploads/2023/12/3.png"></a>
-                    </th>
-                    <th width="600">
-                        <img src="https://d2dkqamqz2k831.cloudfront.net/posts/338-1733217432633.jpg">
-                    </th>
-                </tr>
-            </table>
+			            <div class="img-row">
+                <div class="img-col">
+                    <a href="https://www.youtube.com/watch?v=INscMGmhmX4"><img src="https://venus-online-software-training.com/wp-content/uploads/2023/12/3.png"></a>
+                </div>
+                <div class="img-col">
+                    <img src="https://d2dkqamqz2k831.cloudfront.net/posts/338-1733217432633.jpg">
+                </div>
+            </div>
         </center>
     </body>
 </html>
