@@ -6,37 +6,65 @@
     <style>
             img {width: 100%;}
             hr {height: 10px;}
-			.img-row {
+			.header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				font-size: 80px;
+				color: white;
+				font-weight: bold;}
+			.footer {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				text-align: right;
+				font-style: italic;
+				font-family: monospace;}
+			.center {
+				position: fixed;
+    			top: 50%;
+    			left: 50%;
+    			-webkit-transform: translate(-50%, -50%);
+    			transform: translate(-50%, -50%);}
+			.row {
 				display:flex;
 				justify-content: center;
 				align-items: center;;
-				gap: 10px;}
-			.img-col {
+				gap: 10px;
+				text-align: center;}
+			.col {
 				width: 400px;
 			}
     </style>
 </head>
 <body style="background-color:pink;">
-    <center>
-        <h1 style="font-size: 180px; color: white;">#Hellcome#</h1>
-		<div class="img-row">
-			<div class="img-col">
-				<img src="https://www.auchan-retail.pt/wp-content/uploads/sites/2/2020/10/logotype_RVB_HD-1024x439.png">
+        <div class="header">
+			<P>#Hellcome#</p>
+		</div>
+		<div class="center">
+			<div class="row">
+				<div class="col">
+					<img src="https://www.auchan-retail.pt/wp-content/uploads/sites/2/2020/10/logotype_RVB_HD-1024x439.png">
+				</div>
+				<div class="col">
+					<img src="https://pontosdevista.pt/static/uploads/2020/06/logo-mponlinexl-768x458.png">
+				</div>
 			</div>
-			<div class="img-col">
-				<img src="https://pontosdevista.pt/static/uploads/2020/06/logo-mponlinexl-768x458.png">
+			<div class="row">
+				<div class="col">
+					<a href="https://www.auchan.pt/" style="font-size: 30px;">Loja Auchan</a>
+				</div>
+				<div class="col">
+					<a href="https://www.minipreco.pt/?gad_source=1&gad_campaignid=22259545114&gbraid=0AAAAA-2a5Cdfn-1aAutTUpm5EQaJli5rK&gclid=EAIaIQobChMItaaW5IOrjgMV3MZ5BB0Hyw2REAAYAiAAEgLzK_D_BwE" style="font-size: 30px;">Loja Minipreço</a>
+				</div>
 			</div>
 		</div>
-		<div class="img-row">
-			<div class="img-col">
-				<a href="https://www.auchan.pt/" style="font-size: 30px;">Loja Auchan</a>
-			</div>
-			<div class="img-col">
-				<a href="https://www.minipreco.pt/?gad_source=1&gad_campaignid=22259545114&gbraid=0AAAAA-2a5Cdfn-1aAutTUpm5EQaJli5rK&gclid=EAIaIQobChMItaaW5IOrjgMV3MZ5BB0Hyw2REAAYAiAAEgLzK_D_BwE" style="font-size: 30px;">Loja Minipreço</a>
-			</div>
+		<div class="footer">
+        	<hr color="black">
+			<p>© scurto 2025</p>
 		</div>
-        <hr color="black">
-    </center>
-		<p style="font-style: italic; font-family: monospace; text-align: right;">© scurto 2025</p>
 </body>
 </html>
