@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Change Background</title>
+  <link rel="stylesheet" href="background.css">
+</head>
+<body>
+  <button class="btn" onclick="changeBgColor()">Change Background</button>
+  <script>
+	/*
+	# é adicionado para indicar que a string é uma cor hexadecimal
+	Math.floor arredonda o número para baixo, garantindo que o valor seja um inteiro
+	Math.random()*16777215 gera um número aleatório entre 0 e 16777215, 16777215 é o valor hexadecimal + alto para uma cor RGB (#FFFFFF)
+	toString(16) converte o número para uma string hexadecimal (base 16)
+	padStart(6, '0') garante que a string tenha pelo menos 6 caracteres, preenchendo com zeros à esquerda se necessário
+	document.body.style.background = color aplica a cor ao background
+	*/
+    function changeBgColor() {
+      var color = '#'+Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+      document.body.style.background = color;
+    }
+  </script>
+</body>
+</html>
