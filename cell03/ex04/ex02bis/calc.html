@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Calculator (jQuery)</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    .calc-form { display: flex; gap: 8px; align-items: center; }
+    input[type="text"] { width: 60px; padding: 4px; }
+    select { padding: 4px; }
+    input[type="submit"] { padding: 4px 12px; }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <form class="calc-form">
+    <input type="text" id="left" autocomplete="off" />
+    <select id="op">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select>
+    <input type="text" id="right" autocomplete="off" />
+    <input type="submit" value="Try me!" />
+  </form>
+  <script>
+    function isPositiveInt(val) {
+      return /^\d+$/.test(val);
+    }
+    $(function() {
+      $('.calc-form').on('submit', function(e) {
+        e.preventDefault();
+        var left = $('#left').val();
+        var right = $('#right').val();
+        var op = $('#op').val();
+        if (!isPositiveInt(left) || !isPositiveInt(right)) {
+          alert('Error :(');
+          return false;
+        }
+        left = parseInt(left);
+        right = parseInt(right);
+        if ((op === '/' || op === '%') && right === 0) {
+          alert("It's over 9000!");
+          console.log("It's over 9000!");
+          return false;
+        }
+        var result;
+        switch(op) {
+          case '+': result = left + right; break;
+          case '-': result = left - right; break;
+          case '*': result = left * right; break;
+          case '/': result = left / right; break;
+          case '%': result = left % right; break;
+        }
+        alert(result);
+        console.log(result);
+        return false;
+      });
+      setInterval(function() {
+        alert('Please, use me...');
+      }, 30000);
+    });
+  </script>
+</body>
+</html>

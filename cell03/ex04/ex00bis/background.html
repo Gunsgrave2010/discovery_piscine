@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Change Background (jQuery)</title>
+  <link rel="stylesheet" href="background.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <button class="btn" id="change-bg">Change Background</button>
+  <script>
+    $(function() {
+      $('#change-bg').on('click', function() {
+        var color = '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+        $('body').css('background', color);
+      });
+    });
+  </script>
+</body>
+</html>
