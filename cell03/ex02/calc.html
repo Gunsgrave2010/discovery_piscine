@@ -28,23 +28,23 @@
       return /^\d+$/.test(val);
     }
     function calculate(e) {
-      e.preventDefault();
+      e.preventDefault(); /*não deixa a pagina fazer refresh*/
       var stvalue = document.getElementById('stvalue').value;
       var ndvalue = document.getElementById('ndvalue').value;
       var op = document.getElementById('op').value;
-      if (!isPositiveInt(stvalue) || !isPositiveInt(ndvalue)) {
+      if (!isPositiveInt(stvalue) || !isPositiveInt(ndvalue)) { /*verifica se os valores são positivos e inteiros*/
         alert('Error :(');
         return false;
       }
       stvalue = parseInt(stvalue);
       ndvalue = parseInt(ndvalue);
-      if ((op === '/' || op === '%') && ndvalue === 0) {
+      if ((op === '/' || op === '%') && ndvalue === 0) { /*verifica se a divisão e o modulo é por zero*/
         alert("It's over 9000!");
         console.log("It's over 9000!");
         return false;
       }
       var result;
-      switch(op) {
+      switch(op) { /*faz a operação de acordo com o operador selecionado*/
         case '+': result = stvalue + ndvalue; break;
         case '-': result = stvalue - ndvalue; break;
         case '*': result = stvalue * ndvalue; break;
@@ -55,7 +55,7 @@
       console.log(result);
       return false;
     }
-    setInterval(function() {
+    setInterval(function() { /*envia o alerta a cada 30 segundos*/
       alert('Please, use me...');
     }, 30000);
   </script>
