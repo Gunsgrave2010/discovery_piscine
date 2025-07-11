@@ -1,114 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Welcome to our website</title>
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <style>
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', 'Roboto', 'Raleway', Arial, sans-serif;
-    }
-
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      background: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
-    }
-
-    .main-content {
-      flex: 1 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 2rem;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    }
-
-    #footer {
-      position: relative;
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(10px);
-      padding: 20px 0;
-      color: #333;
-      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    #footer .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #footer .copyright {
-      margin: 0;
-      font-size: 14px;
-    }
-
-    #footer .credits {
-      margin-top: 4px;
-      font-size: 13px;
-      text-align: center;
-    }
-
-  </style>
-  <!-- Typed.js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Our First Web Page</title>
+    <link rel="stylesheet" href="assets/css/index.css">    
 </head>
-
-<body>
-  <div class="main-content">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <h2 style="text-align: center;">Welcome to our website</h2>
-      <p style="text-align: center;">We are <span class="typed" data-typed-items="Designers, Developers, Freelancers, Curious =)"></span></p>
-      <div style="display: flex; gap: 24px; justify-content: center; margin-top: 32px;">
-        <a href="cv_scurto_en.html" class="btn" style="background:#2563eb; color:#fff; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-size: 1.1rem; font-family: inherit; font-weight: 500;">CV Scurto EN</a>
-        <a href="https://www.example.com/cv2" class="btn" style="background:#22c55e; color:#fff; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-size: 1.1rem; font-family: inherit; font-weight: 500;">CV Scurto PT</a>
-      </div>
+<body class="background-image">
+    <div class="main">
+        <div class="title Poppins">
+            <h1>Our First Web Page</h1>
+        </div>
+        <div class="container">
+            <div class="button-container"> 
+                <a href="nairobi-cv.html" class="myButton">Nairobi</a>
+            </div>
+            <div class="button-container"> 
+                <a href="#" class="myButton">tduarte</a>
+            </div>
+        </div>
+        <div class="footer">
+            <hr>
+            <span>© dsantos, masousa, tduarte, scurto 2025</span>
+        </div>
     </div>
-  </div>
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
-      </div>
-    </div>
-  </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var typedElement = document.querySelector('.typed');
-      if (typedElement) {
-        var items = typedElement.getAttribute('data-typed-items');
-        if (items) {
-          new Typed('.typed', {
-            strings: items.split(',').map(function(s) { return s.trim(); }),
-            typeSpeed: 80,
-            backSpeed: 40,
-            backDelay: 1500,
-            loop: true
-          });
-        }
-      }
-    });
-  </script>
 </body>
-
 </html>
