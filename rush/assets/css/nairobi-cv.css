@@ -520,6 +520,11 @@ section,
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+
+#resume {
+  background-color: #f4fafd;
+}
+
 .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;
