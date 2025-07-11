@@ -7,7 +7,7 @@ function setCookie(name, value, days) { /* Define a função para definir um coo
   }
   document.cookie = name + '=' + encodeURIComponent(value) + expires + '; path=/';
 }
-function getCookie(name) { /* Define a função para obter o valor de um cookie */
+function getCookie(name) { /* Define a função para obter o valor do cookie */
   var nameEQ = name + '=';
   var ca = document.cookie.split(';');
   for(var i=0;i < ca.length;i++) {
@@ -17,7 +17,7 @@ function getCookie(name) { /* Define a função para obter o valor de um cookie 
   }
   return null;
 }
-function saveTodos() { /* Salva a lista de TO DOs em um cookie */
+function saveTodos() { /* Salva a lista  TO DOs no cookie */
   var todos = [];
   document.querySelectorAll('#ft_list .todo').forEach(function(el) {
     todos.push(el.textContent);
