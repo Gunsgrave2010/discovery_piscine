@@ -25,28 +25,28 @@
     <input type="submit" value="Try me!" />
   </form>
   <script>
-    function isPositiveInt(val) {
+    function isPositiveInt(val) { /*verifica se o valor é um inteiro positivo*/
       return /^\d+$/.test(val);
     }
-    $(function() {
+    $(function() { /*jQuery para manipulação do formulário*/
       $('.calc-form').on('submit', function(e) {
         e.preventDefault();
         var left = $('#left').val();
         var right = $('#right').val();
         var op = $('#op').val();
-        if (!isPositiveInt(left) || !isPositiveInt(right)) {
+        if (!isPositiveInt(left) || !isPositiveInt(right)) { /*verifica se os valores são positivos e inteiros*/
           alert('Error :(');
           return false;
         }
         left = parseInt(left);
         right = parseInt(right);
-        if ((op === '/' || op === '%') && right === 0) {
+        if ((op === '/' || op === '%') && right === 0) { /*verifica se a divisão e o modulo é por zero*/
           alert("It's over 9000!");
           console.log("It's over 9000!");
           return false;
         }
         var result;
-        switch(op) {
+        switch(op) { /*faz a operação de acordo com o operador selecionado*/
           case '+': result = left + right; break;
           case '-': result = left - right; break;
           case '*': result = left * right; break;
@@ -57,7 +57,7 @@
         console.log(result);
         return false;
       });
-      setInterval(function() {
+      setInterval(function() { /*envia o alerta a cada 30 segundos*/
         alert('Please, use me...');
       }, 30000);
     });

@@ -29,7 +29,8 @@
 <body>
   <div id="balloon"></div>
   <script>
-    $(function() {
+    $(function() { // versão jQuery do script para o balloon script
+	  // Define as cores e o tamanho inicial
       var colors = ['red', 'green', 'blue'];
       var colorIndex = 0;
       var size = 200;
@@ -40,7 +41,7 @@
           background: colors[colorIndex]
         });
       }
-      $('#balloon').on('click', function() {
+      $('#balloon').on('click', function() { // Aumenta o tamanho e muda a cor do balão ao clicar
         size += 10;
         colorIndex = (colorIndex + 1) % colors.length;
         if (size > 420) {
@@ -49,7 +50,7 @@
         }
         updateBalloon();
       });
-      $('#balloon').on('mouseleave', function() {
+      $('#balloon').on('mouseleave', function() { // Diminui o tamanho e muda a cor ao sair com o rato do balão
         size = Math.max(200, size - 5);
         colorIndex = (colorIndex - 1 + colors.length) % colors.length;
         updateBalloon();
