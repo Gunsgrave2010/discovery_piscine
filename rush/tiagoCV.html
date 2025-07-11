@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Rush Discovery - tduarte</title>
+  <meta name="description" content="Rush project for 42 Lisbon">
+  <meta name="keywords" content="Web-design">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- build CSS Files -->
+  <link href="assets/build/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/build/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/build/aos/aos.css" rel="stylesheet"> <!-- CSS Animates Scroll -->
+  
+
+  <!-- Custom CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.htmk" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#hero" class="active"><i class="bi bi-person-fill navicon"></i>Introdução</a></li>    
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Curriculum Vitae</a></li>
+          <!--<li><a href="#card"><i class="bi bi-person navicon"></i> #card</a></li> NEED BE FINISHED --> 
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
+
+      <div class="hero-content">
+
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1>Web<span class="accent-text">Designer</span></h1>
+                <h2>& SoftDev</h2>
+                <p class="lead">Sou <span class="typed" data-typed-items="3D Designer, Web Developer, SoftDev"></span></p>
+                <p class="description">Apaixonados por criar experiências digitais excepcionais que combinam design inovador e desenvolvimento funcional. Vamos dar vida à sua visão.</p>
+
+                <div class="hero-actions">
+                  <a href="#resume" class="btn btn-primary">Mais Sobre mim</a>
+                </div>
+
+                <div class="social-links">
+                  <a href="#"><i class="bi bi-facebook"></i></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="assets/img/profile/me.jpg" alt="Tiago Duarte" class="profile-image">
+                  <div class="card-img-42">
+                    <img src="assets/img/profile/42.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    
+    
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Curriculum Vitae</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <!-- Left column with summary and contact -->
+          <div class="col-lg-4">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+              <div class="profile-img mb-4">
+                <img src="assets/img/profile/me2.jpg" alt="Profile" class="img-fluid rounded">
+              </div>
+
+              <h3>Auto Descrição</h3>
+              <p>
+                Durante o meu percurso estudei lado a lado programação e música, sendo estas as minhas paixões. Ambicioso e curioso para descobrir sempre mais.
+              </p>
+              <div class="skills-animation mt-4">
+                <h3>Skills</h3>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>.NET C#</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>PHP</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>C</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>SQL</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right column with experience and education -->
+          <div class="col-lg-8 ps-4 ps-lg-5">
+            <!-- Experience Section -->
+            <div class="resume-section" data-aos="fade-up">
+              <h3><i class="bi bi-briefcase me-2"></i>Experiencia Professional</h3>
+
+              <div class="resume-item">
+                <h4>Web Designer</h4>
+                <h5>2022 </h5>
+                <p class="company"><i class="bi bi-building"></i> Freelancer</p>
+                <ul>
+                  <li>Desenhei e integrei a loja www.brassfeelings.pt</li>
+                  <li>Desenhei e construí a intranet</li>
+                </ul>
+              </div>
+            <!-- Education Section -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+              <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
+              
+              <div class="resume-item">
+                <h4>.NET C#</h4>
+                <h5>2017</h5>
+                <p class="company"><i class="bi bi-building"></i> Citeforma</p>
+                <p>Web-design</p>
+              </div>
+
+
+            <!-- Certifications Section -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="200">
+              <h3><i class="bi bi-award me-2"></i>Certificações</h3>
+
+              <div class="resume-item">
+                <h4>Hanz Zimmer Audio Production</h4>
+                <h5>2022</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    
+    <!-- Contact Section -->
+     <hr>
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p>Nesta Secção encontre todas as informações para me contactar ou se preferir venha até mim</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box">
+              <h3>Informações</h3>
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Morada</h4>
+                  <p>Rua das Curvas Tortas</p>
+                  <p>1212-263 - Vale Cheiroso</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Telefone</h4>
+                  <p>+351 987 234 567</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email</h4>
+                  <p>quim.rodinhas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <h3>Contacta-me</h3><br>
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Nome" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Assunto" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">tduarte</strong> <span></span></p>
+      </div>
+      <div class="credits">
+        Designed by tduarte, scurto, dsantos e masousa 
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- build JS Files -->
+  <script src="assets/build/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/build/aos/aos.js"></script>
+  <script src="assets/build/typed.js/typed.umd.js"></script>
+  <script src="assets/build/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/build/waypoints/noframework.waypoints.js"></script>
+  
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
