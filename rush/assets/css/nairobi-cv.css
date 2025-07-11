@@ -627,11 +627,6 @@ section,
   font-size: 14px;
 }
 
-.contact .info-item:hover i {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
